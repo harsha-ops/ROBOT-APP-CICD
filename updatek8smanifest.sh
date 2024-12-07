@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 REPO_URL="https://${GITHUB_TOKEN}@github.com/harsha-ops/ROBOT-APP-CICD.git"
 
 git clone "$REPO_URL" /tmp/repo
