@@ -6,7 +6,7 @@ git clone "$REPO_URL" /tmp/repo
 
 cd /tmp/repo
 
-sed -i "s|image:.*|image: $2|g" k8s-manifest/$1-deploy.yml
+sed -i "s|image:.*|image: $2|g" k8smanifest/$1-deploy.yml
 
 # Configure Git author details
 git config --global user.email "jenkins@example.com"
