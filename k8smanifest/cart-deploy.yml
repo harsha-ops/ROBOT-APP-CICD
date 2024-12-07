@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: cart-pod
-        image: 
+        image: harsha6798/robot-app-cart-image:4
         ports:
         - containerPort: 80
