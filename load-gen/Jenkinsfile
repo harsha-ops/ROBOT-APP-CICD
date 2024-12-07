@@ -24,5 +24,14 @@ pipeline {
                 sh 'docker push ${DOCKER_IMAGE}'
             }
         }
+
+        stage('Update k8s manifest') {
+            steps {
+                sh '''
+                export REPO_URL="https://${GITHUB_TOKEN}@github.com/harsha-ops/ROBOT-APP-CICD.git"
+                sh updatek8smanifest.sh loadgen ${DOCKER_IMAGE}
+                '''
+            }
+        }
     }
 }
