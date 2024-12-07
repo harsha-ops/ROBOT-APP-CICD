@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: dispatch-pod
-          image: 
+          image: harsha6798/robot-app-dispatch-image:3
           ports:
           - containerPort: 80
