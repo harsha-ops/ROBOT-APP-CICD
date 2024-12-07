@@ -1,6 +1,13 @@
 FROM debian:10 AS build
 
-RUN apt-get update && apt-get -y install maven
+# Install required packages
+RUN apt-get update && apt-get install -y \
+    maven \
+    openjdk-11-jre-headless ca-certificates-java
+
+# Force update of certificates
+RUN update-ca-certificates -f && \
+    /var/lib/dpkg/info/ca-certificates-java.postinst configure
 
 WORKDIR /app
 
