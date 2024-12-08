@@ -1,5 +1,12 @@
 FROM python:3.10-slim
 
+# Some default values
+ENV HOST="http://localhost:8080/" \
+    SILENT=0 \
+    NUM_CLIENTS=1 \
+    ERROR=0 \
+    RUN_TIME=0
+
 WORKDIR /app
 
 COPY requirements.txt .
