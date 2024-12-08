@@ -7,4 +7,5 @@ metadata:
   type: NodePort
   ports:
   - port: 8081
-  targetPort: 80
+    targetPort: 80
+    nodePort: 33515
