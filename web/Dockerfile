@@ -18,7 +18,7 @@ ENTRYPOINT ["/root/entrypoint.sh"]
 
 COPY ./static/ /usr/share/nginx/html/
 
-#COPY default.conf.template /etc/nginx/conf.d/default.conf.template
+COPY default.conf.template /etc/nginx/conf.d/default.conf.template
 
 EXPOSE 80
 
