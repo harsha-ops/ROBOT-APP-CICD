@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: web-pod
-          image: harsha6798/robot-app-web-image:6
+          image: harsha6798/robot-app-web-image:7
           ports:
           - containerPort: 80
