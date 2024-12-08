@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: user-pod
-          image: 
+          image: harsha6798/robot-app-user-image:3
           ports:
           - containerPort: 80
