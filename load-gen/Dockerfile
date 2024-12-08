@@ -10,7 +10,9 @@ COPY entrypoint.sh /app/
 
 COPY robot-shop.py /app/
 
+RUN chmod +x /app/entrypoint.sh
+
 EXPOSE 8080
 
-CMD [ "entrypoint.sh" ]
+CMD [ "/app/entrypoint.sh" ]
 
