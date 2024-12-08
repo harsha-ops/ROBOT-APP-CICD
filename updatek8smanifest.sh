@@ -4,9 +4,9 @@ set -x
 
 REPO_URL="https://${GITHUB_TOKEN}@github.com/harsha-ops/ROBOT-APP-CICD.git"
 
-git clone "$REPO_URL" /tmp/repo
+git clone "$REPO_URL" /tmp/
 
-cd /tmp/repo
+cd /tmp/
 
 sed -i "s|image:.*|image: $2|g" k8smanifest/$1-deploy.yml
 
@@ -20,4 +20,4 @@ git commit -m "Update kubernetes Manifest"
 
 git push "$REPO_URL"
 
-rm -rf /tmp/repo
+rm -rf /tmp/*
