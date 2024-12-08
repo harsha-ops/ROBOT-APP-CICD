@@ -16,4 +16,4 @@ spec:
         - name: mysql
           image: harsha6798/robot-app-mysql-image:7
           ports:
-          - containerPort: 80
+          - containerPort: 3306

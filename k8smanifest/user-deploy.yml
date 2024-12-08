@@ -16,4 +16,4 @@ spec:
         - name: user-pod
           image: harsha6798/robot-app-user-image:6
           ports:
-          - containerPort: 80
+          - containerPort: 8080

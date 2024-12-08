@@ -16,4 +16,4 @@ spec:
         - name: loadgen-pod
           image: harsha6798/robot-app-loadgen-image:8
           ports:
-          - containerPort: 80
+          - containerPort: 8080

@@ -16,4 +16,4 @@ spec:
         - name: catalogue-pod
           image: harsha6798/robot-app-catalogue-image:5
           ports:
-          - containerPort: 80
+          - containerPort: 8080

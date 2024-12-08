@@ -16,4 +16,4 @@ spec:
         - name: mongo
           image: harsha6798/robot-app-mongo-image:5
           ports:
-          - containerPort: 80
+          - containerPort: 27017

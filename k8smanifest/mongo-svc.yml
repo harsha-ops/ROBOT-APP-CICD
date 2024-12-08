@@ -7,5 +7,5 @@ spec:
       app: mongo
   type: NodePort
   ports:
-  - port: 8081
-  targetPort: 80
+  - port: 27017
+  targetPort: 27017

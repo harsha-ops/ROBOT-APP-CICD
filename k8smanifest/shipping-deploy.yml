@@ -16,4 +16,4 @@ spec:
         - name: shipping-pod
           image: harsha6798/robot-app-shipping-image:7
           ports:
-          - containerPort: 80
+          - containerPort: 8080

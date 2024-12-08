@@ -16,4 +16,4 @@ spec:
         - name: ratings-pod
           image: harsha6798/robot-app-ratings-image:8
           ports:
-          - containerPort: 80
+          - containerPort: 8080

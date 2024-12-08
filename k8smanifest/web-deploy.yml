@@ -16,4 +16,4 @@ spec:
         - name: web-pod
           image: harsha6798/robot-app-web-image:9
           ports:
-          - containerPort: 80
+          - containerPort: 8080
