@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: payment-pod
-          image: harsha6798/robot-app-payment-image:6
+          image: harsha6798/robot-app-payment-image:7
           ports:
           - containerPort: 8080
